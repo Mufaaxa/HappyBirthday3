@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #fbeff8, #e1f0ff);
+    overflow: hidden;
+    color: #333;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .container {
+    text-align: center;
+    margin-top: 10vh;
+    padding: 20px;
+  }
+  
+  .title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3em;
+    color: #ca5b85;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #666;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .btn {
+    padding: 15px 30px;
+    background-color: #ffdbe6;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1em;
+    color: #ca5b85;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .btn:hover {
+    background-color: #fbb1c8;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+  
+  /* Bunga Peony jatuh */
+  .flower-bg::before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: url('peony-petal.png'); /* gambar kelopak bunga peony transparan */
+    animation: fall 12s linear infinite;
+    opacity: 0.1;
+  }
+  
+  @keyframes fall {
+    0% {
+      background-position: 0 -100%;
+    }
+    100% {
+      background-position: 0 100%;
+    }
+  }

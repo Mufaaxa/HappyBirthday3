@@ -1,0 +1,90 @@
+body.memory-garden-page {
+  background: linear-gradient(to bottom, #fff0f5, #fceff9);
+  font-family: 'Georgia', serif;
+  padding: 2rem;
+  color: #5e4b56;
+}
+
+html, body {
+  height: auto;
+  overflow-y: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: #b35f8e;
+  text-shadow: 1px 1px #fff;
+}
+
+.memory-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.memory-card {
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid #f8d7ef;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.memory-card:hover {
+  transform: scale(1.02);
+}
+
+.memory-card img,
+.memory-card video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #fcd2ea;
+}
+
+.memory-card p {
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  color: #5a3c4e;
+}
+
+.back-button {
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+  color: #b35f8e;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.back-button:hover {
+  color: #912e65;
+}
+
+.petal {
+  position: fixed;
+  top: -10px;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  pointer-events: none;
+  z-index: 9999;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 10;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}

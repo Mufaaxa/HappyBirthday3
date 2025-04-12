@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flower Quiz</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="flower-quiz.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🌷 Flower Quiz for You 🌷</h1>
+    <p class="subtitle">Let's see how well you know me!</p>
+
+    <div class="quiz">
+      <div class="question" id="question1">
+        <p>1. Which of these would I most likely do if I had a free day?</p>
+        <button onclick="checkAnswer(1, 'a')">a. Watch my favorite movie or show all day.</button>
+        <button onclick="checkAnswer(1, 'b')">b. Spend the whole day outdoors, exploring. </button>
+        <button onclick="checkAnswer(1, 'c')">c. Sleep all day, no interruptions.</button>
+      </div>
+
+      <div id="result1" class="result"></div>
+
+      <div class="question" id="question2">
+        <p>2. If I could choose a superpower, which one would I pick?</p>
+        <button onclick="checkAnswer(2, 'a')">a. Invisibility, to sneak around unnoticed.</button>
+        <button onclick="checkAnswer(2, 'b')">b. Teleportation, to go anywhere instantly.</button>
+        <button onclick="checkAnswer(2, 'c')">c. Super strength, to lift anything effortlessly</button>
+      </div>
+
+      <div id="result2" class="result"></div>
+    </div>
+
+    <a href="main.html" class="btn">⬅ Back to Garden</a>
+  </div>
+
+  <script src="flower-quiz.js"></script>
+</body>
+</html>

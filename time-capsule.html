@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Time Capsule</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="time-capsule.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">💌 Time Capsule</h1>
+    <p class="subtitle">Messages for your now, and your future.</p>
+
+    <div class="capsule-container">
+      <button onclick="revealMessage(1)">🎁 Message for Today</button>
+      <button onclick="revealMessage(2)">🌠 Wish for the Future</button>
+      <button onclick="revealMessage(3)">📜 Letter to Your 18th</button>
+    </div>
+
+    <div class="capsule-messages">
+      <p id="message1" class="hidden">Happy birthday, my love. Every day with you feels like the most beautiful gift. 
+        I'm so grateful to be part of your life and to experience all the happiness you bring. 
+        May your days always be filled with love, laughter, and all the best things. I’m always here for you, now and forever.</p>
+      <p id="message2" class="hidden">I hope the year ahead brings you even more happiness, strength, and self-love. 
+        I can't wait for all the laughter, adventures, and beautiful memories we’ll share together. 
+        May every step you take be filled with love and joy, and I’m excited to be part of that journey with you.</p>
+      <p id="message3" class="hidden">If you're reading this one year later... I hope you’re still smiling and still dreaming big.</p>
+    </div>
+
+    <a href="main.html" class="btn">⬅ Back to Garden</a>
+  </div>
+
+  <script src="time-capsule.js"></script>
+</body>
+</html>

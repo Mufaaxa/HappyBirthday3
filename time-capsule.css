@@ -1,0 +1,42 @@
+.capsule-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin: 40px 0;
+}
+
+.capsule-container button {
+  padding: 12px 20px;
+  background-color: #ecb2d8;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.capsule-container button:hover {
+  background-color: #d98cbf;
+}
+
+.capsule-messages {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.capsule-messages p {
+  color: #4e3b4b;
+  font-style: italic;
+  margin: 12px 0;
+  max-width: 500px;
+}
+
+.hidden {
+  display: none;
+}
+
+html, body {
+  height: auto;
+  overflow-y: auto;
+}

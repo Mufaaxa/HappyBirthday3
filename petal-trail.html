@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Petal Trail</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="petal-trail.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🌸Petal Trail🌸</h1>
+    <p class="subtitle">Follow the petals… they lead to something beautiful.</p>
+
+    <div class="trail">
+      <div class="petal" onclick="revealNote(1)">🌸</div>
+      <div class="petal" onclick="revealNote(2)">🌸</div>
+      <div class="petal" onclick="revealNote(3)">🌸</div>
+    </div>
+
+    <div class="notes">
+      <p id="note1" class="hidden">"The first petal knows how my heart skipped when you first smiled."</p>
+      <p id="note2" class="hidden">"This one remembers the way your eyes light up when you talk about your dreams."</p>
+      <p id="note3" class="hidden">"And here… the petal that keeps my promise: I'll always choose you."</p>
+    </div>
+
+    <a href="main.html" class="btn">⬅ Back to Garden</a>
+  </div>
+
+  <script src="petal-trail.js"></script>
+</body>
+</html>

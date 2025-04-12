@@ -1,0 +1,60 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.trail {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.petal {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.petal:hover {
+  transform: scale(1.3);
+}
+
+.notes p {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  background-color: #f9d6e2;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #b35f8e;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #f3bccd;
+}
